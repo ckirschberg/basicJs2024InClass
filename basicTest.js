@@ -73,3 +73,22 @@ box.addEventListener("click", function() {
         box.style.backgroundColor = "red";
     }
 })
+
+function createTodo(){
+    const newTodoText = document.getElementById("newTodoText").value;
+    const newLi = document.createElement("li");
+    newLi.textContent = newTodoText;
+    
+    document.getElementById("todoList").appendChild(newLi);
+}
+
+document.getElementById("newTodoText").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        createTodo();
+    }
+})
+
+document.getElementById("addTodo").addEventListener("click", function() {
+  createTodo();
+})
+
