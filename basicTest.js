@@ -61,5 +61,15 @@ console.log(students);
 
 // Accessing an object in an array
 console.log(students[6].hobby)
+const box = document.getElementById("box");
 
 
+box.addEventListener("click", function() {    
+    const backgroundColor = box.style.backgroundColor;
+
+    if (backgroundColor === "red") {
+        box.style.backgroundColor = "lightblue";
+    } else {
+        box.style.backgroundColor = "red";
+    }
+})
