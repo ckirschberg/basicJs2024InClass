@@ -170,7 +170,7 @@ const age = 18;
 let alcohol = age >= 18;
 console.log(alcohol);
 
-myObj.myMethod(admin ? 'ACTIVE' : 'NOT ALLOWED')
+// myObj.myMethod(admin ? 'ACTIVE' : 'NOT ALLOWED')
 
 const largest = (number1, number2, number3, number4) => {
     //if ()
@@ -179,3 +179,9 @@ const largest = (number1, number2, number3, number4) => {
 
 console.log(largest(1, 2, 3, 4));
 
+
+const randomNumber = Math.floor(Math.random()*100)+1;
+console.log(randomNumber);
+
+// const number2 = prompt("Enter a number between 1 and 100")
+// console.log(number2);
