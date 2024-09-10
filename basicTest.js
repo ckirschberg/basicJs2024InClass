@@ -183,5 +183,27 @@ console.log(largest(1, 2, 3, 4));
 const randomNumber = Math.floor(Math.random()*100)+1;
 console.log(randomNumber);
 
-// const number2 = prompt("Enter a number between 1 and 100")
-// console.log(number2);
+// const name = prompt("What is your name?")
+// console.log(name);
+
+const string = "Christian";
+const length = string.length;
+console.log(length)
+
+
+
+async function fetchMoviesJSON() {
+    const response = await fetch('https://v2.jokeapi.dev/joke/Any');
+    const jokeObject = await response.json();
+    return jokeObject;
+}
+// fetchMoviesJSON().then(movies => {
+//     console.log(movies); // fetched movies
+// });
+const jokeObject = await fetchMoviesJSON();
+console.log(jokeObject.joke);
+
+
+
+
+
